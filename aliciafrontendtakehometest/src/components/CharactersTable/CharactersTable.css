@@ -1,0 +1,101 @@
+
+table {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -0.1px;
+  }
+  
+  thead {
+    text-align: left;
+  }
+  
+  thead th:last-child {
+    text-align: right;
+  }
+  
+  tbody tr {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  tbody tr:first-child {
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  th {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  th,
+  td {
+    padding: 16px 20px;
+    vertical-align: top;
+  }
+  
+  td:nth-child(2) {
+    max-width: 300px;
+  }
+  
+  td:first-child {
+    text-decoration: underline;
+    color: #177bba;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  } 
+  button {
+    background: white;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  
+  @media (min-width: 375px) and (max-width: 767px) {
+    th,
+    td {
+      padding: 12px 20px 14px;
+    }
+  
+    table {
+      width: 100%;
+      padding: 0 16px;
+    }
+    thead {
+      display: none;
+    }
+    tbody tr {
+      display: grid;
+      grid-template-areas:
+        "top-left ."
+        "bottom-left right";
+      grid-column-gap: 20px;
+    }
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    table {
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    table {
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 1280px)  {
+    table {
+      margin: auto;
+    }
+  }
+  
