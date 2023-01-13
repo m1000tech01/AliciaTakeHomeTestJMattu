@@ -25,7 +25,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 - I stuck to the alotted 3 hours.
 
-- At the moment the project is using context and a service, however the service is pretty slow.
+- At the moment the project is using context and a service, however the service is pretty slow. Clicking on a character takes a while for it to load on the character details page. 
 
 - Another approach would be to use a graphQL type approach, with something like ReactQuery, that would help with caching and reloading the data. To really optimise this you would need to have a query defined for each caterogry needed, for example for starships or films, so that they can be cached seperately.
 
